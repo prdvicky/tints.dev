@@ -33,6 +33,7 @@ export const loader: LoaderFunction = async ({params, request}) => {
         process.env.NODE_ENV !== 'production'
           ? 'public, immutable, no-transform, max-age=31536000'
           : 'no-cache',
+      'Access-Control-Allow-Origin': '*',
     },
   })
 }
